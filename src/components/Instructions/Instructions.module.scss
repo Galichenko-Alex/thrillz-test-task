@@ -1,0 +1,29 @@
+.title {
+  color: #333333;
+}
+
+.subtitle,
+.textWrapper {
+  color: #505050;
+}
+
+.textarea,
+.textWrapper {
+  width: 483px;
+}
+
+.textarea {
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 14px 19px 12px 16px;
+
+  height: 182px;
+
+  &:focus {
+    border: 1px solid #949494;
+  }
+}
+
+.textWrapper {
+}

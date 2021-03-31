@@ -1,0 +1,49 @@
+.title {
+  color: #333333;
+}
+
+.button {
+  width: 249px;
+  height: 48px;
+  border: 1px solid #505050;
+  box-sizing: border-box;
+  border-radius: 24px;
+
+  &.active {
+    background: #609efc;
+    border-color: #609efc;
+    color: #ffffff;
+
+    .circleIcon {
+      border-color: #ffffff;
+    }
+  }
+}
+
+.circleIcon {
+  margin-left: 19px;
+}
+
+.icon {
+  margin-left: 27px;
+}
+
+.text {
+  margin-left: 16px;
+}
+
+.toText {
+  color: #505050;
+}
+
+.input {
+  width: 410px;
+  height: 40px;
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
+  padding: 8px 20px;
+
+  &:focus {
+    border: 1px solid #949494;
+  }
+}
