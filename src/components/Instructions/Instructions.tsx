@@ -15,7 +15,7 @@ const Instructions: FC<Props> = ({ instructions, handleChange }) => (
       My instructions for the talent are :{" "}
     </h5>
     <textarea
-      className={cx(styles.textarea, "focus: outline-none")}
+      className={cx(styles.textarea, "focus: outline-none w-full")}
       placeholder={PLACEHOLDER_TEXT}
       onChange={handleChange}
       maxLength={500}

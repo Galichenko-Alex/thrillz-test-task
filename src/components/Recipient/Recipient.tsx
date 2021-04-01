@@ -21,18 +21,13 @@ const Recipient: FC<Props> = ({
 }) => (
   <div>
     <h4 className={cx(styles.title, "font-bold")}>Who is this video for?</h4>
-    <div
-      className={cx(
-        styles.inputWrapper,
-        "flex justify-start items-center mt-8"
-      )}
-    >
+    <div className="flex justify-center items-center mt-8 flex-wrap md:justify-start sm:flex-nowrap ">
       <button
         type="button"
         className={cx(
           styles.button,
           { [styles.active]: recipient === RECIPIENT_SOMEONE },
-          "flex flex-row items-center focus:outline-none mr-3"
+          "flex flex-row items-center focus:outline-none mr-3 w-80 md:w-60"
         )}
         onClick={() => setVideoFor(RECIPIENT_SOMEONE)}
       >
@@ -48,7 +43,7 @@ const Recipient: FC<Props> = ({
         className={cx(
           styles.button,
           { [styles.active]: recipient === RECIPIENT_MYSELF },
-          "flex flex-row items-center focus:outline-none mr-3"
+          "flex flex-row items-center focus:outline-none mr-3 w-80 mt-4 sm:mt-0 md:w-60"
         )}
         onClick={() => setVideoFor(RECIPIENT_MYSELF)}
       >

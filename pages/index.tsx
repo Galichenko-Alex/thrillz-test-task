@@ -56,7 +56,7 @@ export default function Home() {
                 onSubmit={handleSubmit}
                 className="flex flex-col items-center lg:block"
               >
-                <div className={styles.contentWrapper}>
+                <div className={cx(styles.contentWrapper, "w-full px-5")}>
                   <Recipient
                     setVideoFor={(option: string) => {
                       setValues({ ...values, videoFor: option });
@@ -66,8 +66,8 @@ export default function Home() {
                     recipient={values.videoFor}
                   />
                 </div>
-                <hr className={styles.divider} />
-                <div className={styles.contentWrapper}>
+                <hr className={cx(styles.divider, "w-full mx-5")} />
+                <div className={cx(styles.contentWrapper, "w-full px-5")}>
                   <Occasion
                     setOccasion={(option: string) => {
                       setValues({ ...values, occasion: option });
@@ -75,15 +75,15 @@ export default function Home() {
                     selectedOccasion={values.occasion}
                   />
                 </div>
-                <hr className={styles.divider} />
-                <div className={styles.contentWrapper}>
+                <hr className={cx(styles.divider, "px-5")} />
+                <div className={cx(styles.contentWrapper, "w-full px-5")}>
                   <Instructions
                     instructions={values.instructions}
                     handleChange={handleChange}
                   />
                 </div>
-                <hr className={styles.divider} />
-                <div className={styles.contentWrapper}>
+                <hr className={cx(styles.divider, "px-5")} />
+                <div className={cx(styles.contentWrapper, "w-full px-5")}>
                   <MarketingSource
                     source={values.marketing_source}
                     setSource={(option: string) => {
